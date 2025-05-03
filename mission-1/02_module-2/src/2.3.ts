@@ -22,11 +22,21 @@
 
   //array of objects
 
-  const users: GenericArray<{ name: string; age: number }> = [
+  //   const users: GenericArray<{ name: string; age: number }> = [
+  //     { name: "John", age: 25 },
+  //     { name: "Jane", age: 30 },
+  //   ];
+
+  //after simplifying the above code using generic types
+  type User = {
+    name: string;
+    age: number;
+  };
+
+  const users: GenericArray<User> = [
     { name: "John", age: 25 },
     { name: "Jane", age: 30 },
   ];
-
   //Tuple using generic types
   //generic tuple
 
