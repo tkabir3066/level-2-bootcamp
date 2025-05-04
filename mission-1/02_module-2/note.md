@@ -8,5 +8,9 @@ https://www.geeksforgeeks.org/typescript-differences-between-type-aliases-and-in
 3.Generic Type in typescript
 https://www.geeksforgeeks.org/typescript-generic-functions/
 
-4. Tuple using generic types:
-   https://chatgpt.com/share/68175c59-ca5c-800d-993d-c5fe5a0e03f1
+4.Tuple using generic types:
+https://chatgpt.com/share/68175c59-ca5c-800d-993d-c5fe5a0e03f1
+
+5. Constraints in typescript:
+   a. https://chatgpt.com/share/6817a724-9098-800d-bbd2-7e9e5ab0aa0b
+   b. http://geeksforgeeks.org/typescript-constraints/
