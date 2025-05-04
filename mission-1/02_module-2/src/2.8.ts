@@ -40,11 +40,11 @@
 
   const showData = async (): Promise<Something> => {
     const data = await createPromise();
-    console.log(data);
-    // return data;
+    // console.log(data);
+    return data;
   };
 
-  //   showData();
+  showData();
 
   //   fetch API
 
