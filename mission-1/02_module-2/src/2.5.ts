@@ -77,7 +77,7 @@
     email: string;
   }
 
-  const addCourseToStudent = <T extends Student>(student: T): T => {
+  const addCourseToStudent = <T>(student: T): T => {
     const course = "Next Level Web Development";
     return { ...student, course };
   };
