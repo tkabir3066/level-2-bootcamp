@@ -50,7 +50,6 @@
       return (Counter.count = Counter.count - 1);
     }
   }
-  a;
 
   //class er method e static use korle class er naam dhore dakte hobe
 
