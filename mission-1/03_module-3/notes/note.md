@@ -7,3 +7,6 @@ c. https://chatgpt.com/c/6819b711-c4cc-800d-b5d5-5a3899f9344b
 
 2. instanceof :
    https://chatgpt.com/share/681c41ea-ed8c-800d-83c3-00bba1877c71
+
+3. Master OOPs in typescript:
+   https://dev.to/rajrathod/mastering-object-oriented-programming-with-typescript-encapsulation-abstraction-inheritance-and-polymorphism-explained-c6p
