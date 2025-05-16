@@ -20,3 +20,6 @@ https://chatgpt.com/share/68272a86-7130-800d-bf23-7e5afb992464
 
 steps of top-down technique:
 https://chatgpt.com/share/682731c1-f848-800d-b288-ded698088ca3
+
+relationship and relationship cardinality:
+https://chatgpt.com/share/682736a4-1f60-800d-a9c4-bb4b72520bab
