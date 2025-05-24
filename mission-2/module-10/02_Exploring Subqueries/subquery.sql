@@ -1,4 +1,4 @@
--- Active: 1747503291940@@localhost@5432@practice_task
+-- Active: 1747503291940@@localhost@5432@ph
 
 CREATE TABLE employees (
     employee_id SERIAL PRIMARY KEY,
