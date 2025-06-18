@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Introduction to JavaScript",
+    "body": "JavaScript is a versatile programming language used for web development.",
+    "createdAt": "2025-06-01T10:30:00Z"
+  },
+  {
+    "title": "Understanding React Hooks",
+    "body": "React Hooks let you use state and other features without writing a class.",
+    "createdAt": "2025-06-05T14:45:00Z"
+  },
+  {
+    "title": "Node.js Basics",
+    "body": "Node.js allows JavaScript to run on the server side.",
+    "createdAt": "2025-06-10T09:15:00Z"
+  },
+  {
+    "title": "MongoDB Crash Course",
+    "body": "MongoDB is a NoSQL database that stores data in JSON-like documents.",
+    "createdAt": "2025-06-12T11:00:00Z"
+  },
+  {
+    "title": "CSS Grid Tutorial",
+    "body": "CSS Grid is a layout system optimized for two-dimensional designs.",
+    "createdAt": "2025-06-14T16:25:00Z"
+  },
+  {
+    "title": "Prisma Expert",
+    "body": "Prisma is an ORM",
+    "createdAt": "Mon Jun 16 2025"
+  }
+]
