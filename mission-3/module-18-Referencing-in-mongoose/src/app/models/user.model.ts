@@ -4,6 +4,7 @@ import {
   IAddress,
   IUser,
   UserInstanceMethod,
+  UserStaticMethods,
 } from "../interfaces/user.interface";
 import validator from "validator";
 
@@ -18,7 +19,7 @@ const addressSchema = new Schema<IAddress>(
   }
 );
 
-const userSchema = new Schema<IUser, Model<IUser>, UserInstanceMethod>(
+const userSchema = new Schema<IUser, UserStaticMethods, UserInstanceMethod>(
   {
     firstName: {
       type: String,
@@ -89,6 +90,14 @@ userSchema.method("hashPassword", async function (plainPassword) {
   return hashedPassword;
 });
 
-const User = model("User", userSchema);
+userSchema.static("hashPassword", async function (plainPassword) {
+  const salt = await bcrypt.genSalt(10);
+  const hashedPassword = await bcrypt.hash(plainPassword, salt);
+
+  return hashedPassword;
+});
+
+// const User = model("User", userSchema);
+const User = model<IUser, UserStaticMethods>("User", userSchema);
 
 export default User;

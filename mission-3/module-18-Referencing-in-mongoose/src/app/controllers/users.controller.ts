@@ -19,14 +19,18 @@ userRouter.post("/create-user", async (req: Request, res: Response) => {
     // const zodBody = await createUserZodSchema.parseAsync(req.body);
     const body = req.body;
 
-    // const user = await User.create(body);
-
-    const user = new User(body);
-
+    //built in and custom instance method
+    /*     const user = new User(body);
+    
     const hashedPassword = await user.hashPassword(body.password);
     user.password = hashedPassword;
-    await user.save();
+    await user.save(); */
 
+    //built in and custom static method
+    const hashedPassword = await User.hashPassword(body.password);
+    console.log(hashedPassword, "Static");
+    body.password = hashedPassword;
+    const user = await User.create(body);
     res.json({
       success: true,
       message: "User created successfully",
