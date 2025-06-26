@@ -13,3 +13,7 @@ export interface IUser {
   role: "USER" | "ADMIN" | "SUPERADMIN";
   address: IAddress;
 }
+
+export interface UserInstanceMethod {
+  hashPassword(password: string): string;
+}
