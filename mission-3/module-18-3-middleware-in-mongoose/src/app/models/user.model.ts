@@ -7,6 +7,7 @@ import {
   UserStaticMethods,
 } from "../interfaces/user.interface";
 import validator from "validator";
+import Note from "./notes.model";
 
 const addressSchema = new Schema<IAddress>(
   {
@@ -97,15 +98,39 @@ userSchema.static("hashPassword", async function (plainPassword) {
   return hashedPassword;
 });
 
-userSchema.pre("save", async function () {
+// pre hooks
+
+//document middleware
+userSchema.pre("save", async function (next) {
   const salt = await bcrypt.genSalt(10);
   const hashedPassword = await bcrypt.hash(this.password, salt);
 
   this.password = hashedPassword;
+
+  next();
 });
 
-userSchema.post("save", function (doc) {
+//query middleware
+userSchema.pre("find", function (next) {
+  next();
+});
+
+//post hook
+
+//document middleware
+userSchema.post("save", function (doc, next) {
   console.log("%s has been saved", doc.email);
+
+  next();
+});
+
+//query middleware
+userSchema.post("findOneAndDelete", async function (doc, next) {
+  if (doc) {
+    console.log(doc);
+    await Note.deleteMany({ user: doc._id });
+  }
+  next();
 });
 
 // const User = model("User", userSchema);
