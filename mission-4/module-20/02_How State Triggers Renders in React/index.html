@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div
+      id="app"
+      class="flex justify-center items-center min-h-screenbg-gray-100"
+    >
+      <div class="flex items-center bg-white gap-6 p-8 rounded-lg shadow-lg">
+        <button
+          id="increment"
+          class="bg-green-500 text-white font-semibold px-5 py-2 rounded hover:bg-green-600 transition"
+        >
+          Increment
+        </button>
+        <span id="count">0</span>
+        <button
+          id="decrement"
+          class="bg-red-500 text-white font-semibold px-5 py-2 rounded hover:bg-red-600 transition"
+        >
+          Decrement
+        </button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
